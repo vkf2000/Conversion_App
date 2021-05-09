@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.conversion.list">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="149dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="34dp"
+        android:alpha=".7"
+        android:gravity="center"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="149dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/spinner"
+        android:layout_toRightOf="@+id/spinner"
+        android:alpha=".7"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="149dp"
+        android:layout_height="38dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="27dp"
+        android:alpha=".7"
+        android:clipToPadding="true"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/list"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="136dp"
+
+        android:layout_height="51dp"
+
+
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="115dp"
+        android:alpha=".7"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:hint="Enter Number"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/lis"
+        android:layout_width="136dp"
+        android:layout_height="51dp"
+
+
+        android:layout_above="@+id/spinner1"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="115dp"
+        android:layout_toEndOf="@+id/list"
+        android:alpha=".7"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:hint="Output"
+        android:textColor="@color/black" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
